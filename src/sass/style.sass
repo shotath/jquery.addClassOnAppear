@@ -1,0 +1,30 @@
+@import 'compass'
+
+$pink: #F8ACA0
+$emerald: #9BD8D4
+$white: #FFFDFC
+
+html
+	background: $white
+
+.wrapper
+	overflow: hidden
+	margin: 0 0 2.5%
+
+.box
+	width: 17%
+	height: 0
+	opacity: 0.1
+	padding: 17% 0 0
+	margin: 2.5% 0 0 2.5%
+	float: left
+	+transition( all .3s ease-in )
+	
+	&:nth-of-type( 2n )
+		background: $pink
+	
+	&:nth-of-type( 2n + 1 )
+		background: $emerald
+	
+	&.appeared
+		opacity: 1

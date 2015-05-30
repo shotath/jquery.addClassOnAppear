@@ -1,0 +1,36 @@
+/* line 7, ../../src/sass/style.sass */
+html {
+  background: #FFFDFC;
+}
+
+/* line 10, ../../src/sass/style.sass */
+.wrapper {
+  overflow: hidden;
+  margin: 0 0 2.5%;
+}
+
+/* line 14, ../../src/sass/style.sass */
+.box {
+  width: 17%;
+  height: 0;
+  opacity: 0.1;
+  padding: 17% 0 0;
+  margin: 2.5% 0 0 2.5%;
+  float: left;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+/* line 23, ../../src/sass/style.sass */
+.box:nth-of-type(2n) {
+  background: #F8ACA0;
+}
+/* line 26, ../../src/sass/style.sass */
+.box:nth-of-type(2n + 1) {
+  background: #9BD8D4;
+}
+/* line 29, ../../src/sass/style.sass */
+.box.appeared {
+  opacity: 1;
+}
